@@ -41,7 +41,7 @@ System run(Config config, std::ostream& out) {
   say(std::format("packed and checked; {} trapped chain attempts were grown again", packer.dead_ends()));
 
   poly::endlink::write_outputs(config, system, chains,
-                               std::format("LAMMPS data file: {} and {} cross-linkers, FCC random walks (Polymerization "
+                               std::format("LAMMPS data file: {} and {} cross-linkers, FCC random walks (JuhePoly "
                                            "randomwalk, seed {})",
                                            chains.describe("chains"), config.n_crosslinkers, config.seed),
                                say);

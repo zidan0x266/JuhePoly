@@ -49,7 +49,7 @@ System run(Config config, std::ostream& out) {
 
   poly::endlink::write_outputs(config, system, chains,
                                std::format("LAMMPS data file: Gusev network of {} and {} cross-linkers of functionality {}, "
-                                           "conversion {:.4f} (Polymerization gusev, seed {})",
+                                           "conversion {:.4f} (JuhePoly gusev, seed {})",
                                            strands, config.n_crosslinkers, config.functionality, stats.conversion, config.seed),
                                say, "strands.dat");
   return system;
